@@ -488,8 +488,7 @@ p {
 
 .form-subscribe {
   display: flex;
-  position: relative;
-  column-gap: 24px;
+  gap: 24px;
 }
 
 .label-subscribe {
@@ -519,6 +518,10 @@ p {
 }
 
 .submit-subscribe {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 165px;
   color: #fff;
   font-size: 16px;
   font-weight: 500;
@@ -527,7 +530,7 @@ p {
   border: 0;
   border-radius: 4px;
   background-color: #4d5ae5;
-  padding: 8px 64px 8px 24px;
+  padding: 8px 24px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
 }
@@ -537,10 +540,7 @@ p {
 }
 
 .icon-telegram {
-  position: absolute;
-  top: 50%;
-  right: 24px;
-  transform: translateY(-50%);
+  margin-left: 16px;
 }
 
 /* ===== END FOOTER ====== */
