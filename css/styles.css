@@ -485,6 +485,7 @@ p {
 
 .form-subscribe {
   display: flex;
+  position: relative;
 }
 
 .label-subscribe {
@@ -511,10 +512,6 @@ p {
   font-size: 12px;
   line-height: 24px; /* 200% */
   letter-spacing: 0.48px;
-}
-
-.wrapper-subscribe {
-  position: relative;
 }
 
 .submit-subscribe {
