@@ -729,14 +729,6 @@ p {
   outline: 2px solid rgba(0, 0, 255, 0.5);
 }
 
-.privacy-text {
-  width: 338px;
-  color: #8e8f99;
-  font-size: 12px;
-  line-height: 14px; /* 116.667% */
-  letter-spacing: 0.48px;
-}
-
 .link-privacy {
   color: #4d5ae5;
   text-decoration: underline;
