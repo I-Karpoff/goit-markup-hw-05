@@ -674,12 +674,13 @@ p {
 .textarea-field {
   width: 100%;
   height: 120px;
-  color: #2e2f42;
+  color: rgba(46, 47, 66, 0.4);
   background-color: transparent;
+  outline: transparent;
   border-radius: 4px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   font-size: 12px;
-  line-height: 14px; /* 116.667% */
+  line-height: 1.17;
   letter-spacing: 0.48px;
   padding: 8px 16px;
   resize: none;
@@ -702,19 +703,6 @@ p {
   margin-bottom: 24px;
 }
 
-.checkbox-invisible {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
 .checkbox {
   display: inline-flex;
   justify-content: center;
@@ -723,18 +711,21 @@ p {
   height: 16px;
   background-color: transparent;
   border: 1px solid rgba(46, 47, 66, 0.4);
-  border-radius: 4px;
+  border-radius: 2px;
   cursor: pointer;
   fill: transparent;
   margin-right: 8px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.checkbox-invisible:checked + .label-field > .checkbox {
+.checkbox-custome:checked + .label-field > .checkbox {
   background-color: #404bbf;
-  fill: #fff;
+  fill: #f4f4fd;
+  border: none;
 }
 
-.checkbox-invisible:focus + .label-field > .checkbox {
+.checkbox-custome:focus + .label-field > .checkbox {
   outline: 2px solid rgba(0, 0, 255, 0.5);
 }
 
@@ -752,11 +743,11 @@ p {
 }
 
 .submit-button {
-  display: flex;
+  display: block;
   justify-content: center;
   align-items: center;
   margin: auto;
-  width: 169px;
+  min-width: 169px;
   height: 56px;
   color: #fff;
   border: 0;
@@ -769,7 +760,7 @@ p {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   padding: 16px 32px;
   cursor: pointer;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .submit-button:hover,
