@@ -483,9 +483,13 @@ p {
   background-color: #31d0aa;
 }
 
+.div-content-subscribe {
+}
+
 .form-subscribe {
   display: flex;
   position: relative;
+  column-gap: 24px;
 }
 
 .label-subscribe {
